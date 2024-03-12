@@ -1,0 +1,19 @@
+@import url(reset.css);
+p {
+	color: pink;
+}
+h1 {
+	color: red;
+}
+a {
+	color: blue;
+}
+.lesson {
+	color: black;
+}
+.title {
+	color: greenyellow;
+}
+div {
+	color: cornflowerblue;
+}
