@@ -1,0 +1,68 @@
+@import url(reset.css);
+
+h1 {
+	color: red;
+}
+a {
+	color: blue;
+}
+.lesson {
+	color: black;
+}
+.title {
+	color: greenyellow;
+}
+div {
+	color: cornflowerblue;
+}
+
+h2 {
+	color:green;
+}
+.text {
+	color: darkblue;
+}
+#some-id {
+	color: brown;
+}
+.eat {
+	color: aqua;
+}
+.holiday {
+	color: chartreuse;
+}
+[class*=day]{
+	color: darkviolet;
+}
+div.text{
+	color: black;
+}
+.title,
+.text,
+li{
+	color: deeppink;
+}
+.lesson a {
+	color: chartreuse;
+}
+.lesson .blue-text {
+	color: darkorange;
+}
+.lesson * {
+	color: darkseagreen;
+}
+.lesson > p {
+	color: crimson;
+}
+.text ~  p {
+	color: dodgerblue;
+}
+.coffee + h3 {
+	color: green;
+}
+p {
+	color: red;
+}
+p{
+	color: blue;
+}
