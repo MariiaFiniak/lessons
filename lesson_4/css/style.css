@@ -1,0 +1,49 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&display=swap');
+
+
+@import url(fonts.css);
+@import url(reset.css);
+
+
+
+body {
+	font-family:" Proxima Nova" sans-serif;
+	font-size: 16px;
+}
+.text {
+	font-size: 16px;
+}
+.title {
+	font-style: normal;
+	font-size: 40px;
+	
+}
+.title {
+	font-weight: normal;
+}
+.title {
+color: rgb(43, 41, 41);
+ }
+ .text {
+	text-align: left;
+}
+ .title {
+	text-align: center;
+ }
+ .kontact {
+	text-align: right;
+ }
+.title {
+	text-decoration: underline;
+}
+.text {
+	text-transform: none;
+}
+.text {
+	line-height: 30px;
+}
+.center-image {
+	text-align: center;
+}
