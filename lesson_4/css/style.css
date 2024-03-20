@@ -1,0 +1,45 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&display=swap');
+
+
+@import url(fonts.css);
+@import url(reset.css);
+
+body{
+	font-family: "Proxima nova","Elssie"sans-serif;
+}
+
+.title {
+	font-style: normal;
+	font-size: 40px;
+}
+.title {
+	font-weight: normal;
+}
+.title {
+color: rgb(43, 41, 41);
+ }
+ .text {
+	text-align: left;
+}
+ .title {
+	text-align: center;
+ }
+ .title {
+	text-decoration: underline;
+}
+
+.text {
+	font-size: 16px;
+}
+.text {
+	text-transform: none;
+}
+.text{
+	font-weight: normal;
+	text-align: left;
+}
+.center-image {
+	text-align: center;
+}
