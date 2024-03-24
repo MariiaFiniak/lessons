@@ -1,0 +1,62 @@
+
+
+
+
+
+@import url(fonts.css);
+@import url(reset.css);
+
+
+.living-room title {
+	font-family: "Proxima Nova",sans-serif;
+	font-style: normal;
+	font-size: 40px;
+	font-weight: 600;
+   color:#2b2929;
+	line-height: 40px;
+}
+ .sofa-title {
+	font-family: "Proxima Nova",sans-serif;
+	font-style: normal;
+	font-size: 30px;
+	font-weight: normal;
+   color:#2b2929;
+	line-height: 30px;
+}
+ .sofa-item {
+	font-family: "Proxima Nova",sans-serif;
+	font-size: 16px;
+	text-transform: none;
+	font-weight: 300;
+	text-align: left;
+}
+
+.living-room {
+	margin-top: 20px;
+}
+.living-room title {
+	text-align: center;
+	margin: 10px 0px;
+
+}
+.living-photo {
+	width: 100%;
+}
+.living-room text {
+	margin-top: 20px;
+}
+.living-desc {
+	margin-top: 20px;
+}
+.sofa {
+	margin-top: 40px;
+}
+.sofa-list {
+	margin-left: 48px;
+}
+.sofa-item {
+	margin-bottom: 40px;
+}
+.sofa-sub-title {
+	margin-top: 78px;
+}
