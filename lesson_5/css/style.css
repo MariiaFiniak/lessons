@@ -1,0 +1,106 @@
+
+
+
+
+
+@import url(fonts.css);
+@import url(rReset.css);
+
+
+
+
+
+.Instagram-title{
+	font-family: "Roboto",sans-serif;
+	font-weight: 500;
+	color: rgb(0, 0, 0);
+	text-align: center;
+	font-size: 50px;
+	margin-bottom: 30px;
+} 
+.style {
+	font-family: "Roboto",sans-serif;
+	background-color: #f4f4f4;
+	padding-top: 120px;
+	padding-bottom: 70px;
+	padding-left: 30px;
+	padding-right: 30px;
+	text-align: center;
+
+}
+.conteiner {
+	width: 1330px;
+	margin: 0 auto;
+}
+.imeges {
+	margin: 0-10px;
+	
+}
+.image {
+	display: inline-block;
+	padding: 0px 10px;
+}
+
+.Living-room {
+	font-family: "Proxima Nova",sans-serif;
+	padding-left: 200px;
+	padding-top: 100px;
+	padding-right: 100px;
+	padding-bottom: 100px;
+	max-width: 1070px;
+	margin-left: 300px;
+	background-color: antiquewhite;
+}
+.Living-room h1{
+	color: #2b2929;
+	font-size: 40px;
+	text-align: center;
+	font-weight: 600;
+	line-height: 48px;
+	margin-bottom: 20px;
+}
+.Living-photo img {
+	margin-bottom: 30px;
+	width: 100%;
+}
+.Living-room p {
+	font-size: 20px;
+	line-height: 28px;
+}
+
+.text-room {
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 30px;
+	margin-bottom: 10px;
+}
+.text-room h3 {
+	padding-bottom: 20px;
+}
+
+.text-room  {
+	margin-left: 40px;
+}
+	.text-room {
+		padding-bottom: 20 px;
+	}
+	.sofa title {
+		font-family: "Proxima Nova",sans-serif;
+		margin-bottom: 30px;
+		font-size: 20px;
+		font-weight: normal;
+		line-height: 28px;
+		text-transform: none;
+		text-align: center;
+		
+	}
+	.sofa-item {
+		margin-bottom: 5px;
+	}
+	.sofa-list {
+		padding-left: 100px;
+		margin-bottom: 30px;
+		max-width: 1070px;
+	}
+
+
