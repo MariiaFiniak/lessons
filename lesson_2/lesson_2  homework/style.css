@@ -1,0 +1,59 @@
+* {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+
+.header {
+  text-align: center;
+  background-color: fuchsia;
+  font-size: 50px;
+  border-radius: 50px;
+  margin-bottom: 50px;
+}
+.roman {
+  background-color:lightgray
+  width: 900px;
+  padding-left: 20px;
+  border: 3px;
+  margin-bottom:30px
+}
+.title {
+	text-align: center;
+  text-transform: uppercase;
+}
+.cardsss {
+
+}
+.cards {
+  background-color:lightgray;
+
+}
+  
+
+
+
+.card {
+	height: 80px;
+  width: 80px;
+  padding: 5px;
+  display: inline-block;
+}
+.content {
+	background-color: lightpink;
+  text-align: center;
+  font-size: 40px;
+}
+
+.content_1 {
+background-color: lightpink;
+  text-align: center;
+  font-size: 40px;
+  color: red;
+}
+	.conteiner {
+	
+	}
