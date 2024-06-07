@@ -1,0 +1,53 @@
+
+
+@mixin Text($fs,$c,$fw){
+	font-family: "Montserrat",sans-serif;
+	font-weight: $fw;
+	font-size: $fs;
+	color: $c;
+	
+}
+
+.Top {
+	@include Text(14px,#000,500);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 110px;
+  .logo{
+	margin-right: 63px;
+  }
+  .TopContainer {
+    display: flex;
+	 .Button {
+    position: relative;
+	 margin-right: 40px;
+	 
+  }
+	 .TopMenu {
+    display: flex;
+    gap: 40px;
+	 
+  }
+    .TopNavigation {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      margin-left: 63px;
+      img {
+        margin-right: 9px;
+        vertical-align: middle;
+      }
+    }
+	 
+  }
+}
+@media (max-width:320px) {
+	.Top{
+		background-color: #00093c;
+	}
+	.Button{
+	visibility: hidden;
+	opacity: 0;
+	}
+}
