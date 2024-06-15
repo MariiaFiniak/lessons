@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="stylesheet" href="./styles/nouislider.min.css">
+		<link rel="stylesheet" href="./styles/index.min.css" />
+		<title>Courses</title>
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<header class="Header dark">
+				<div class="Header_container">
+					<a href="index.html" class="Header_logo">
+						<img src="assets/icons/white-logo.svg" alt="#">
+					</a>
+					<div class="Header_body">
+						<ul class="Header_menu">
+							<li><a class="CourceLink" href="#">
+									<img src="assets/icons/all-course-icon-white.svg" alt="#">
+									Все курсы
+								</a></li>
+							<li><a href="#">Мероприятия</a></li>
+							<li> <a href>Базы знаний</a></li>
+							<li><a href>Карьера</a></li>
+						</ul>
+						<div class="Header_contacts">
+							<a href="https://praha.eu/web/praha/">
+								<img src="assets/icons/TopNavigation-white.svg" alt="#">
+								Prague,Czech Republic
+							</a>
+							<a href="#">8 800 950-33-98</a>
+							<a href="#">
+								<img src="assets/icons/TopExit-white.svg" alt="#">
+								Войти
+							</a>
+						</div>
+					</div>
+					<button class="BurgerIcon" type="button"
+						aria-label="open menu"><span></span></button>
+				</div>
+			</header>
+			<main>
+				<section class="Programs">
+					<div class="Programs_container">
+						<h1>Все программы обучения</h1>
+						<div class="Programs_body">
+							<div class="Programs_header">
+								<ul class="Programs_age">
+									<li>
+										<button type="button" class="box active">
+											<img src="assets/icons/children_sova.svg" alt="#">
+											<div class="box_item">
+												<p>Дети</p>
+												<p>8-14 лет</p>
+											</div>
+										</button>
+									</li>
+									<li>
+										<button type="button" class="box">
+											<img src="assets/icons/children 1_sova.svg" alt="#">
+											<div class="box_item">
+												<p>Подростки</p>
+												<p>14-18 лет</p>
+											</div>
+										</button>
+									</li>
+									<li>
+										<button type="button" class="box">
+											<img src="assets/icons/family_sova.svg" alt="#">
+											<div class="box_item">
+												<p>Взрослые</p>
+												<p>18--</p>
+											</div>
+										</button>
+									</li>
+								</ul>
+							</div>
+							<div class="Programs_content">
+								<div class="Programs_filter">
+									<div class="Filter_column">
+										<h2>Уровень сложности</h2>
+										<div class="Filter_item">
+											<input checked type="radio" name="Difficulty-level" id="Newbie">
+											<label for="Newbie">Новичок</label>
+										</div>
+										<div class="Filter_item">
+											<input type="radio" name="Difficulty-level" id="User">
+											<label for="User">Пользователь</label>
+										</div>
+										<div class="Filter_item">
+											<input type="radio" name="Difficulty-level" id="Professional">
+											<label for="Professional">Профессионал</label>
+										</div>
+										<div class="Filter_item">
+											<input type="radio" name="Difficulty-level" id="Читер">
+											<label for="Читер">Читер</label>
+										</div>
+									</div>
+									<div class="Filter_column">
+										<h2>Тип обучения</h2>
+										<div class="Filter_item">
+											<input checked type="radio" name="Type-of-learning" id="Anyone">
+											<label for="Anyone">Любой</label>
+										</div>
+										<div class="Filter_item">
+											<input type="radio" name="Type-of-learning" id="Profession">
+											<label for="Profession">Профессия</label>
+										</div>
+										<div class="Filter_item">
+											<input type="radio" name="Type-of-learning" id="Course">
+											<label for="Course">Курс</label>
+										</div>
+									</div>
+									<div class="Filter_column">
+										<h2>Длительность</h2>
+											<span>от <span id="value-start">1</span> до <span
+													id="value-end">24</span> месяцев</span>
+											<input type="range" id="duration" сlass="slider" min="1"
+												value="12">
+									</div>
+									
+								</div>
+								<div class="Programs_inner">
+									<ul class="Programs_buttons">
+										<li><button><span>Робототехника</span></button></li>
+										<li><button><span>Создание игр</span></button></li>
+										<li><button><span>Web-разработка</span></button></li>
+										<li><button><span>Мультимедиа</span></button></li>
+										<li><button><span>Шахматы</span></button></li>
+										<li><button><span>3D-моделирование и дизайн</span></button></li>
+										<li><button><span>Английский язык</span></button></li>
+										<li><button><span>Блогинг</span></button></li>
+										<li><button><span>Soft skills</span></button></li>
+									</ul>
+									<ul class="Programs_cource-list">
+										<li class="Programs_cource-card">
+											<a href="#" class="Programs_cource-link blue">
+												<div class="Programs_cource-label">Программа</div>
+												<div class="Programs_cource-header">
+													<img src="assets/icons/cource-card-icon.svg" alt="#">
+													<h2>«Разработка мобильных приложений»</h2>
+												</div>
+												<p>
+													Разработчик мобильных приложений создаёт приложения, которыми люди
+													ежедневно пользуются
+													на смартфонах, умных часах и планшетах.
+												</p>
+												<span>24 месяца</span>
+												<div class="discount">-10%</div>
+											</a>
+										</li>
+										<li class="Programs_cource-card">
+											<a href="#" class="Programs_cource-link dyelow">
+												<div class="Programs_cource-label">Программа</div>
+												<div class="Programs_cource-header">
+													<img src="assets/icons/cource-card-icon.svg" alt="#">
+													<h2>«Разработка мобильных приложений»</h2>
+												</div>
+												<p>
+													Разработчик мобильных приложений создаёт приложения, которыми люди
+													ежедневно пользуются
+													на смартфонах, умных часах и планшетах.
+												</p>
+												<span>24 месяца</span>
+												<div class="discount">-10%</div>
+											</a>
+										</li>
+										<li class="Programs_cource-card">
+											<a href="#" class="Programs_cource-link yelow">
+												<div class="Programs_cource-label">Программа</div>
+												<div class="Programs_cource-header">
+													<img src="assets/icons/cource-card-icon.svg" alt="#">
+													<h2>«Разработка мобильных приложений»</h2>
+												</div>
+												<p>
+													Разработчик мобильных приложений создаёт приложения, которыми люди
+													ежедневно пользуются
+													на смартфонах, умных часах и планшетах.
+												</p>
+												<span>24 месяца</span>
+												<div class="discount">-10%</div>
+											</a>
+										</li>
+										<li class="Programs_cource-card">
+											<a href="#" class="Programs_cource-link purple">
+												<div class="Programs_cource-label">Программа</div>
+												<div class="Programs_cource-header">
+													<img src="assets/icons/cource-card-icon.svg" alt="#">
+													<h2>«Разработка мобильных приложений»</h2>
+												</div>
+												<p>
+													Разработчик мобильных приложений создаёт приложения, которыми люди
+													ежедневно пользуются
+													на смартфонах, умных часах и планшетах.
+												</p>
+												<span>24 месяца</span>
+												<div class="discount">-10%</div>
+											</a>
+										</li>
+										<li class="Programs_cource-card">
+											<a href="#" class="Programs_cource-link mint">
+												<div class="Programs_cource-label">Программа</div>
+												<div class="Programs_cource-header">
+													<img src="assets/icons/cource-card-icon.svg" alt="#">
+													<h2>«Разработка мобильных приложений»</h2>
+												</div>
+												<p>
+													Разработчик мобильных приложений создаёт приложения, которыми люди
+													ежедневно пользуются
+													на смартфонах, умных часах и планшетах.
+												</p>
+												<span>24 месяца</span>
+												<div class="discount">-10%</div>
+											</a>
+										</li>
+										<li class="Programs_cource-card">
+											<a href="#" class="Programs_cource-link blue">
+												<div class="Programs_cource-label">Программа</div>
+												<div class="Programs_cource-header">
+													<img src="assets/icons/cource-card-icon.svg" alt="#">
+													<h2>«Разработка мобильных приложений»</h2>
+												</div>
+												<p>
+													Разработчик мобильных приложений создаёт приложения, которыми люди
+													ежедневно пользуются
+													на смартфонах, умных часах и планшетах.
+												</p>
+												<span>24 месяца</span>
+												<div class="discount">-10%</div>
+											</a>
+										</li>
+										<li class="Programs_cource-card">
+											<a href="#" class="Programs_cource-link yelow">
+												<div class="Programs_cource-label">Программа</div>
+												<div class="Programs_cource-header">
+													<img src="assets/icons/cource-card-icon.svg" alt="#">
+													<h2>«Разработка мобильных приложений»</h2>
+												</div>
+												<p>
+													Разработчик мобильных приложений создаёт приложения, которыми люди
+													ежедневно пользуются
+													на смартфонах, умных часах и планшетах.
+												</p>
+												<span>24 месяца</span>
+												<div class="discount">-10%</div>
+											</a>
+										</li>
+										<li class="Programs_cource-card">
+											<a href="#" class="Programs_cource-link pink">
+												<div class="Programs_cource-label">Программа</div>
+												<div class="Programs_cource-header">
+													<img src="assets/icons/cource-card-icon.svg" alt="#">
+													<h2>«Разработка мобильных приложений»</h2>
+												</div>
+												<p>
+													Разработчик мобильных приложений создаёт приложения, которыми люди
+													ежедневно пользуются
+													на смартфонах, умных часах и планшетах.
+												</p>
+												<span>24 месяца</span>
+												<div class="discount">-10%</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer class="footer">
+				<div class="footerTop">
+					<div class="footerTop_container">
+						<div class="footerTop_body">
+							<img class="footerTop_image" src="assets/images/Footer_sova.png" alt="#">
+							<div class="footerTop_wrapper-content">
+								<div class="footerTop_content">
+									<h2>Помочь с выбором?</h2>
+									<p>Оставьте заявку и наши специалисты <br>свяжутся с вами, ответят на
+										все вопросы <br>
+										и подберут подходящий вариант <br> обучения.</p>
+								</div>
+							</div>
+						</div>
+						<form class="footerTop_form" action="#">
+							<div class="footerTop_form-body">
+								<input required type="text" placeholder="Ваше имя" title="Введите Имя">
+								<input required type="text" placeholder="Ваш телефон"
+									title="Введите Номер Телефона">
+								<input required type="email" placeholder="Ваш e-mail"
+									title="Введите Адрес Ел Почты">
+							</div>
+							<div class="Form_Text">
+								<p>Нажимая на кнопку, я соглашаюсь на обработку персональных данных и с
+									правилами пользования Платформой
+								</p>
+								<button type="submit" class="Form_button">Отправить</button>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="footerBase">
+					<div class="footerBase_container">
+						<div class="Footer_info">
+							<img class="Footer_logo" src="assets/icons/white-logo.svg" alt="#">
+							<a class="Footer_number" href="tel:88009503398">8 800 950-33-98</a>
+							<a class="Footer_address" href="#">г.Прага ул.Украинская д.50</a>
+							<ul class="Footer_social">
+								<li><a href="#"><img src="assets/icons/vk_footer.svg" alt="#"></a></li>
+								<li><a href="#"><img src="assets/icons//insta_footer.svg"
+											alt="#"></a></li>
+								<li><a href="#"><img src="assets/icons/facebook.svg" alt="#"></a></li>
+								<li><a href="#"><img src="assets/icons/youtube_footer.svg"
+											alt="#"></a></li>
+								<li><a href="#"><img src="assets/icons/telegram_foter.svg"
+											alt="#"></a></li>
+							</ul>
+							<p class="Info_bottom">© ХОД, Future Academy</p>
+						</div>
+						<div class="footerBase_column">
+							<h2>Детям</h2>
+							<ul>
+								<li><a href="#">Робототехника</a></li>
+								<li><a href="#">Создание игор</a></li>
+								<li><a href="#">Програмирование</a></li>
+								<li><a href="#">Мультимедиа</a></li>
+								<li><a href="#">Soft skills</a></li>
+								<li><a href="#">Шахмати</a></li>
+								<li><a href="#">Блогинг</a></li>
+								<li><a href="#">Создание игр</a></li>
+								<li><a href="#">Програмирование</a></li>
+								<li><a href="#">Мультимедиа</a></li>
+								<li><a href="#">Soft skills</a></li>
+							</ul>
+						</div>
+						<div class="footerBase_column">
+							<h2>Подросткам</h2>
+							<ul>
+								<li><a href="#">Web-разработка</a></li>
+								<li><a href="#">Прикладное програмирование</a></li>
+								<li><a href="#">Графическое моделирование</a></li>
+								<li><a href="#">Game Development</a></li>
+								<li><a href="#">Soft skills</a></li>
+								<li><a href="#">Разработчик мобильных <br>приложений</a></li>
+								<li><a href="#">Блогинг</a></li>
+								<li><a href="#">Создание игр</a></li>
+								<li><a href="#">Програмирование</a></li>
+								<li><a href="#">Мультимедиа</a></li>
+								<li><a href="#">Soft skills</a></li>
+							</ul>
+						</div>
+						<div class="footerBase_column">
+							<ul>
+								<h2><a href="#">Взрослым</a></h2>
+								<li><a href="#">Разработчик игр на Unity</a></li>
+								<li><a href="#">Разработка ПО</a></li>
+								<li><a href="#">Графический дизайн</a></li>
+								<li><a href="#">Тестировщик ПО</a></li>
+								<li><a href="#">Интернет маркетинг</a></li>
+								<li><a href="#">Java-разработчик</a></li>
+								<li><a href="#">Python-разработчик</a></li>
+								<li><a href="#">IOS-разработчик</a></li>
+								<li><a href="#">Програмирование</a></li>
+							</ul>
+						</div>
+						<div class="footerBase_column">
+							<ul>
+								<h2><a href="#">Информация</a></h2>
+								<li><a href="#">Об академии</a></li>
+								<li><a href="#">Мероприятия</a></li>
+								<li><a href="#">Новости</a></li>
+								<li><a href="#">База знаний</a></li>
+								<li><a href="#">Карьера</a></li>
+								<li><a href="#">Контакти</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+		</div>
+	</body>
+
+</html>

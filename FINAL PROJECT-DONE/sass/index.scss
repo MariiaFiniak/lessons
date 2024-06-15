@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --bg-color-blue: #c5ddff;
+  --bg-color-mint: #b8efcf;
+  --bg-color-lpink: #ffeef6;
+  --bg-color-dyellow: #f7bc75;
+  --bg-color-yellow: #ffe38e;
+  --bg-color-dblue: #00093c;
+  --bg-color-main: #f6f7f9;
+  --bg-color-purple: #ddddff;
+}
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"); // стороннее обнуление
+// @import "./utils/root"; // группировка стилей (mixin, root)
+@import "./utils/mixin"; // mixin
+@import "./utils/App"; // собственное обнуление
+@import "./components/Header/Header"; // header
+@import "./components/Aside/Aside"; // header
+@import "./components/Main/Main"; // main
+@import "./components/Footer/Footer"; // footer
+
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--bg-color-main);
+  display: flex;
+  flex-direction: column;
+  > main {
+    flex-grow: 1;
+  }
+}
+
+.BurgerOpen body {
+  overflow: hidden;
+}

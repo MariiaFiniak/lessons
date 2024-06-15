@@ -1,0 +1,13 @@
+@mixin Text($fs, $fw, $c) {
+  font-family: "Montserrat", sans-serif;
+  font-weight: $fw;
+  font-size: $fs;
+  color: $c;
+}
+
+@mixin container {
+  max-width: 1212px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}

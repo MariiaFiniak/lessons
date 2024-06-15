@@ -1,0 +1,218 @@
+.Header {
+  @include Text(14px,500,#000);
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: #fff;
+  &.dark {
+    background-color: var(--bg-color-dblue);
+    color: #fff;
+    .Header_logo {
+        img {
+          fill: #fff;
+          transition: fill 0.3s;
+        }
+    
+    }
+  }
+  .Header_logo {
+    position: relative;
+    z-index: 5;
+    flex-basis: 100px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  .Header_container {
+    @include container;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 110px;
+    gap: 30px;
+  }
+  .Header_body {
+    display: flex;
+    @media (min-width: 768px) {
+      align-items: center;
+      justify-content: flex-end;
+      column-gap: 70px;
+      row-gap: 15px;
+      flex-wrap: wrap;
+    }
+    @media (max-width: 767.98px) {
+      row-gap: 70px;
+      align-items: center;
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 100%;
+      height: 100%;
+      overflow-y: auto;
+      padding-top: 150px;
+      padding-bottom: 30px;
+      padding-inline: 15px;
+      transition: right 0.3s;
+      background-color: #fff;
+      color: #000;
+      &::before {
+        content: "";
+        position: fixed;
+        width: 100%;
+        height: 110px;
+        top: 0;
+        right: -100%;
+        background-color: var(--bg-color-dblue);
+        transition: right 0.3s;
+        .BurgerOpen & {
+          right: 0;
+        }
+      }
+    }
+  }
+  .Header_menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 10px 40px;
+    a {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      position: relative;
+      padding-block: 3px;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 0;
+        height: 2px;
+        transition: width 0.3s;
+        background-color: currentColor;
+      }
+      @media (any-hover: hover) {
+        &:hover::before {
+          right: auto;
+          left: 0;
+          width: 100%;
+        }
+      }
+    }
+    @media (max-width: 767.98px) {
+      flex-direction: column;
+      row-gap: 20px;
+      a {
+        font-size: 22px;
+        text-align: center;
+      }
+    }
+  }
+  .Header_contacts {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px 40px;
+    @media (max-width: 767.98px) {
+      flex-direction: column;
+      row-gap: 20px;
+      a {
+        img {
+          text-align: center;
+          max-width: 20px;
+          max-height: 20px;
+          object-fit: contain;
+        }
+        font-size: 22px;
+      }
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      position: relative;
+      padding-block: 3px;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 0;
+        height: 2px;
+        transition: width 0.3s;
+        background-color: currentColor;
+      }
+      @media (any-hover: hover) {
+        &:hover::before {
+          right: auto;
+          left: 0;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.BurgerIcon {
+  @media (min-width: 767.98px) {
+    display: none;
+  }
+  flex-shrink: 0;
+  display: block;
+  position: relative;
+  width: 30px;
+  height: 18px;
+  z-index: 2;
+  background-color: inherit;
+  @media (any-hover: none) {
+    cursor: default;
+  }
+  span,
+  &::before,
+  &::after {
+    content: "";
+    transition: all 0.3s ease 0s;
+    right: 0;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+    .dark & {
+      background-color: #fff;
+    }
+  }
+  &::before {
+    top: 0;
+  }
+  &::after {
+    bottom: 0;
+  }
+  span {
+    top: calc(50% - 1px);
+  }
+  .BurgerOpen & {
+    span {
+      width: 0;
+    }
+    &::before,
+    &::after {
+      background-color: var(--bg-color-main);
+    }
+    &::before {
+      top: calc(50% - 1px);
+      transform: rotate(-45deg);
+    }
+    &::after {
+      bottom: calc(50% - 1px);
+      transform: rotate(45deg);
+    }
+  }
+}
