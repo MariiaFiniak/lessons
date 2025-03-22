@@ -1,0 +1,35 @@
+@import url('reset.css');
+
+.navigation-list {
+	color: blue;
+}
+
+
+.main p {
+	color:blue;
+}
+.main-title {
+	color: red;
+}
+
+
+.history-title {
+	color: chartreuse;
+}
+.history-items {
+}
+.history-item  + li{
+	color: lightblue;
+}
+
+#navigation_link-2 {
+	color: blueviolet;
+}
+.fact-list .fact-item {
+	color: cadetblue;
+}
+
+.nav {
+	color:lightpink;
+}
+
