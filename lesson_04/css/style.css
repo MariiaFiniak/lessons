@@ -1,0 +1,73 @@
+@import url("fonts.css");
+@import url("reset.css");
+[class*="-title"] {
+  color: red;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration-style: underline;
+  text-decoration-color: red;
+  text-decoration-line: underline;
+}
+.praha-container {
+  font-family: "KopPubBattang";
+  font-weight: 300;
+  font-size: 12px;
+  font-style: italic;
+}
+.praha-information {
+  font-style: normal;
+}
+
+.praha-information-title {
+  box-shadow: 2px 3px 5px red;
+}
+.praha-information > span {
+  text-transform: uppercase;
+  color: blue;
+}
+.praha-souvenirs span {
+  text-decoration: line-through;
+  text-decoration-color: red;
+  text-decoration-thickness: 2px;
+}
+.praha-souvenirs {
+  font-style: initial;
+}
+.praha-souvenirs-title {
+  box-shadow: 5px 7px 30px lightsalmon;
+  letter-spacing: 3px;
+}
+
+.praha-museums-title {
+  text-shadow: 2px 2px 5px #000, 5px -2px 10px red;
+}
+
+.praha-museums-text {
+  text-shadow: -5px -5px lightslategray;
+}
+
+.ecobazar-container {
+  font-family: "Poppins", sans-serif;
+}
+h1 {
+  font-size: 30px;
+  text-align: center;
+}
+
+.ecobazar{
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #1a1a1a;
+}
+.ecobazar-text {
+  color: gray;
+  font-size: 18px;
+  font-style: normal;
+
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0;
+  text-transform: none;
+}
