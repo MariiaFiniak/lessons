@@ -13,6 +13,13 @@
 
 .hydra {
   background-color: #343045;
+  background-image: url(../img/line-decor.png) ,url(../img/line-decor1.png) ;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: right;
+
+
+ 
 }
 .hydra-container {
   font-family: "Montserrat", sans-serif;
@@ -39,10 +46,10 @@
   text-transform: none;
   margin-bottom: 5px;
 }
-.title-under {
-  font-weight: 300;
-  margin-bottom: 42px;
-}
+.title span{
+	font-weight: 300;
+} 
+
 .hydra-text {
   font-size: 16px;
   text-align: left;
@@ -144,15 +151,20 @@
   color: gray;
   line-height: 1.5;
   margin-bottom: 20px;
+
 }
 
 .ekobazar ul li {
   color: gray;
-   margin-bottom: 14px;
   line-height: 1.4;
   background-image: url(../img/icon.svg);
   background-repeat: no-repeat;
-background-position: left;
+background-position: top left;
 padding-left: 30px;
+
 }
+.ekobazar ul{
+  margin-bottom: 14px; 
+}
+
 
