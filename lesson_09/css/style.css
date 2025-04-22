@@ -1,0 +1,13 @@
+/* @import url("fonts.css"); */
+@import url("reset.css");
+
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+}
+[class*="__container"] {
+	max-width: 1950px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
