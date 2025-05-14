@@ -151,8 +151,6 @@
 }
 .best-faculty__photo {
   display: inline-flex;
-  box-sizing: 764px;
-
   padding-top: 55px;
   padding-bottom: 72px;
 }
@@ -187,10 +185,9 @@
 .advantage__information h3{
 	margin-bottom: 9px;
 }
-.advantage__image {
-}
+
 .advantage__title {
-  font-weight: 700px;
+  font-weight: 700;
 }
 .advantage__text {
   font-size: 15px;
