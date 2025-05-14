@@ -12,6 +12,7 @@
   flex-shrink: 1;
 }
 [class*="__container"] {
+	max-width: 1230px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -161,24 +162,28 @@
 .advantage__container {
   padding-top: 70px;
   padding-bottom: 70px;
-  max-width: 1198px;
-  align-items: center;
   color: #fff;
   font-size: 24px;
   font-family: "Inter", sans-serif;
   font-weight: 400;
+   
 }
 
 .advantage__container h2 {
   margin-bottom: 30px;
   text-align: center;
+
 }
 .advantage__items {
-  justify-content: space-between;
-  display: flex;
-  gap: 9px;
+	 display: flex;
+  justify-content: space-between; 
   flex-wrap: wrap;
 }
+.advantage__item{
+	display: flex;
+	gap:9px
+}
+
 .advantage__information h3{
 	margin-bottom: 9px;
 }
