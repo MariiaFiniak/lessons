@@ -1,5 +1,5 @@
 @import url("reset.css");
-@import url("fonts.css");
+
 
 .wrapper {
   min-height: 100%;
@@ -20,8 +20,7 @@
 .faculty {
   background-color: #412672;
 }
-.faculty__container--margin {
-}
+
 .faculty__container {
   padding: 61px 0px 103px 0px;
   max-width: 1241px;
