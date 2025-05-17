@@ -1,0 +1,139 @@
+@import url("reset.css");
+@import url("fonts.css");
+
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper > main {
+  flex-shrink: 1;
+}
+[class*="__container"] {
+	max-width: 1950px;
+
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.billing {
+}
+.billing__container {
+max-width: 875px;
+	
+}
+.billing__main-title{
+	color: #1a1a1a;
+  font-size: 24px;
+  text-align: left;
+  font-family: "Poppins",sans-serif;
+  font-weight: 500;
+  line-height: 1.42;
+
+
+}
+.billing__content {
+
+}
+.form {
+}
+.form__content {
+		
+	  display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: space-between;
+}
+.form__label {
+
+}
+.form__title {
+	color: #1a1a1a;
+  font-size: 14px;
+  font-family: "Poppins",sans-serif;
+  font-weight: 400;
+  line-height: 1.5 ;
+ 
+}
+.form_input {
+	 display:flex ;
+	  gap: 10px; 
+  padding: 14px 16px;
+  border: 1px solid #e6e6e6;
+  background-color: #fff; 
+    border-radius: 6px;
+}
+.form__label--one {
+max-width: 100%;
+	
+}
+.form__select {
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid #E6E6E6;
+    background: #FFF;
+    padding: 14px 16px 14px 16px;
+    color: #999;
+    font-size: 16px;
+    line-height: 20.8px;
+	
+}
+.form__option {
+}
+.form__input {
+	
+  padding: 14px 16px;
+  border: 1px solid #e6e6e6;
+  background-color: #fff; 
+    border-radius: 6px;
+}
+.form__additional {
+}
+.form__textarea {
+  padding: 14px 16px;
+  border: 1px solid #e6e6e6;
+  background-color: #fff; 
+    border-radius: 6px;
+}
+.footer {
+}
+.footer__container {
+}
+.footer__body {
+}
+.footer__footer {
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+  padding: 40px 0;
+}
+.footer__body {
+  text-align: center;
+}
+.footer__footer {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #412672;
+  font-weight: 700;
+}
