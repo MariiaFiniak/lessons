@@ -74,8 +74,13 @@
 												<label class="form-billing__label">
 													<span class="form-billing__title">States</span>
 													<select required name="form[select]" class="form-billing__select">
-														<option disabled selected value="#"
+														<option selected disabled value
 															class="form-billing__option">Select</option>
+														<option value="1">Country 1</option>
+														<option value="2">Country 2</option>
+														<option value="3">Country 3</option>
+														<option value="4">Country 4</option>
+														<option value="5">Country 5</option>
 													</select>
 												</label>
 											</div>
@@ -127,79 +132,61 @@
 										</div>
 									</div>
 								</div>
-
-								<div class="order">
-									<div class="order__container">
-										<div class="order__content">
-											<h2 class="order__main-title order__main-title--margin">Order
-												Summery</h2>
-											<div class="order__items">
-												<div class="order__item">
-													<div class="order__item-content">
-														<div class="order__item--image">
-															<img src="img/icon_1.svg" alt="icon">
-														</div>
-														<p class="order__text">Green Capsicum <span
-																class="order__num">x5</span></p>
-														<span class="order__price">$70.00</span>
+							</div>
+							<div class="order">
+								<div class="order__container">
+									<div class="order__product product">
+										<h2 class="order__title"></h2>
+										<div class="product__items">
+											<div class="product__item">
+												<a href class="product__item-link">
+													<div class="product__image">
+														<img src="/img/icon_1.svg" alt="#">
 													</div>
-													<div class="order__item-content">
-														<div class="order__item--image">
-															<img src="img/icon_2.svg" alt="icon">
-														</div>
-														<p class="order__text">Red Capsicum<span
-																class="order__num">x1</span></p>
-														<span class="order__price">$14.00</span>
-													</div>
-												</div>
-												<div class="order__item order__item--twoo">
-													<div class="order__item-content">
-														<p class="order__text">Subtotal:</p>
-														<span class="order__price">$84.00</span>
-													</div>
-													<div class="order__item-content">
-														<p class="order__text">Shipping</p>
-														<span class="order__price">free</span>
-													</div>
-													<div class="order__item-content">
-														<p class="order__text">Total</p>
-														<span class="order__price">$84.00</span>
-													</div>
-												</div>
+													<p class="product__title">Green Capsicum </p>
+												</a>
+												<p class="product__amount">x5</p>
 											</div>
-											<div class="order__radio">
-												<h2 class="order__main-title order__main-title--margin"> Payment
-													Method</h2>
-												<div class="order__radio-content">
-													<label>
-														<input name="pay-metod" value="cash" type="radio"
-															class="order__input">
-														<span class="order__title">Cash on Delivery</span>
-													</label>
-												</div>
-												<div class="order__radio-content">
-													<label>
-														<input name="pay-metod" value="paypal" type="radio"
-															class="order__input">
-														<span class="order__title">Paypal</span>
-													</label>
-												</div>
-												<div class="order__radio-content">
-													<label>
-														<input name="pay-metod" value="amazon-pay" type="radio"
-															class="order__input">
-														<span class="order__title">Amazon Pay</span>
-													</label>
-												</div>
+											<p class="product__price">$70.00</p>
+										</div>
+										<div class="product__items">
+											<div class="product__item">
+												<a href class="product__item-link">
+													<div class="product__image">
+														<img src="/img/icon_2.svg" alt="#">
+													</div>
+													<p class="product__title">Red Capsicum</p>
+												</a>
+												<p class="product__amount">x1</p>
+											</div>
+											<p class="product__price">$70.00</p>
+										</div>
+										<div class="order__total">$14.00</div>
+									</div>
+									<div class="total">
+										<div class="total__items">
+											<div class="total__item">
+												<p class="total__text">Subtotal:</p>
+												<p class="total__price">$84.00</p>
+											</div>
+											<div class="total__item">
+												<p class="total__text">Shipping:</p>
+												<p class="total__price">Free</p>
+											</div>
+											<div class="total__item">
+												<p class="total__text">Total</p>
+												<p class="total__price--dark">$84.00</p>
 											</div>
 										</div>
-										<button class="btn" type="submit">Place Order</button>
 									</div>
+									<div class="payment"></div>
 								</div>
-							</form>
-						</div>
+							</div>
+						</form>
+
 					</div>
 				</div>
+			
 			</main>
 			<footer class="footer">
 				<div class="footer__container">
