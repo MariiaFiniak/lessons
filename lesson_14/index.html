@@ -56,10 +56,10 @@
 										</div>
 										<div class="form-billing__adress ">
 											<div class="form-billing__adress-content">
-												<label for class="form-billing__label">
+												<label for="states" class="form-billing__label">
 													<span class="form-billing__title">Country / Region</span>
-													<select required name="form[select]" class="form-billing__select">
-														<option required selected value="#"
+													<select id="states" required name="form[select]" class="form-billing__select">
+														<option required selected disabled  value
 															class="form-billing__option">Select</option>
 														<option value="1">Country 1</option>
 														<option value="2">Country 2</option>
@@ -70,7 +70,7 @@
 												</label>
 											</div>
 											<div class="form-billing__adress-content">
-												<label for class="form-billing__label">
+												<label  class="form-billing__label">
 													<span class="form-billing__title">States</span>
 													<select required name="form[select]" class="form-billing__select">
 														<option disabled selected value="#"
@@ -79,24 +79,23 @@
 												</label>
 											</div>
 											<div class="form-billing__adress-content">
-												<label for class="form-billing__label">
+												<label class="form-billing__label">
 													<span class="form-billing__title">Zip Code</span>
 													<input required name="form[]" type="text" placeholder="Zip Code"
 														class="form-billing__input">
 												</label>
 											</div>
 										</div>
-									</div>
 									<div class="form-billing__contact">
 										<div class="form-billing__contact-content">
-											<label for class="form-billing__label">
+											<label  class="form-billing__label">
 												<span class="form-billing__title">Email</span>
 												<input required name="form[]" type="email" placeholder="Email"
 													class="form-billing__input">
 											</label>
 										</div>
 										<div class="form-billing__contact-content">
-											<label for class="form-billing__label">
+											<label  class="form-billing__label">
 												<span class="form-billing__title">Phone</span>
 												<input required name="form[]" type="tel" placeholder="Phone"
 													class="form-billing__input">
@@ -104,7 +103,7 @@
 										</div>
 									</div>
 									<div class="form-billing__checkbox ">
-										<label for class="form-billing__label-checkbox">
+										<label  class="form-billing__label-checkbox">
 											<input checked type="checkbox" name="form[]"
 												class="form-billing__input-checkbox">
 											<span class="form-billing__title-checkbox">Ship to a different
@@ -172,14 +171,14 @@
 												Method</h2>
 											<div class="order__radio-content">
 												<label>
-													<input name="pay-metod" value="cash" type="radio" form="form[]"
+													<input name="pay-metod" value="cash" type="radio" 
 														class="order__input">
 													<span class="order__title">Cash on Delivery</span>
 												</label>
 											</div>
 											<div class="order__radio-content">
 												<label>
-													<input name="pay-metod" value="paypal" type="radio" form="form[]"
+													<input name="pay-metod" value="paypal" type="radio"
 														class="order__input">
 													<span class="order__title">Paypal</span>
 												</label>
@@ -187,7 +186,7 @@
 											<div class="order__radio-content">
 												<label>
 													<input name="pay-metod" value="amazon-pay" type="radio"
-														form="form[]" class="order__input">
+														 class="order__input">
 													<span class="order__title">Amazon Pay</span>
 												</label>
 											</div>
