@@ -58,8 +58,9 @@
 											<div class="form-billing__adress-content">
 												<label for="states" class="form-billing__label">
 													<span class="form-billing__title">Country / Region</span>
-													<select id="states" required name="form[select]" class="form-billing__select">
-														<option required selected disabled  value
+													<select id="states" required name="form[select]"
+														class="form-billing__select">
+														<option selected disabled value
 															class="form-billing__option">Select</option>
 														<option value="1">Country 1</option>
 														<option value="2">Country 2</option>
@@ -70,7 +71,7 @@
 												</label>
 											</div>
 											<div class="form-billing__adress-content">
-												<label  class="form-billing__label">
+												<label class="form-billing__label">
 													<span class="form-billing__title">States</span>
 													<select required name="form[select]" class="form-billing__select">
 														<option disabled selected value="#"
@@ -86,122 +87,120 @@
 												</label>
 											</div>
 										</div>
-									<div class="form-billing__contact">
-										<div class="form-billing__contact-content">
-											<label  class="form-billing__label">
-												<span class="form-billing__title">Email</span>
-												<input required name="form[]" type="email" placeholder="Email"
-													class="form-billing__input">
+										<div class="form-billing__contact">
+											<div class="form-billing__contact-content">
+												<label class="form-billing__label">
+													<span class="form-billing__title">Email</span>
+													<input required name="form[]" type="email" placeholder="Email"
+														class="form-billing__input">
+												</label>
+											</div>
+											<div class="form-billing__contact-content">
+												<label class="form-billing__label">
+													<span class="form-billing__title">Phone</span>
+													<input required name="form[]" type="tel" placeholder="Phone"
+														class="form-billing__input">
+												</label>
+											</div>
+										</div>
+										<div class="form-billing__checkbox ">
+											<label class="form-billing__label-checkbox">
+												<input checked type="checkbox" name="form[]"
+													class="form-billing__input-checkbox">
+												<span class="form-billing__title-checkbox">Ship to a different
+													address</span>
 											</label>
 										</div>
-										<div class="form-billing__contact-content">
-											<label  class="form-billing__label">
-												<span class="form-billing__title">Phone</span>
-												<input required name="form[]" type="tel" placeholder="Phone"
-													class="form-billing__input">
-											</label>
-										</div>
-									</div>
-									<div class="form-billing__checkbox ">
-										<label  class="form-billing__label-checkbox">
-											<input checked type="checkbox" name="form[]"
-												class="form-billing__input-checkbox">
-											<span class="form-billing__title-checkbox">Ship to a different
-												address</span>
-										</label>
-									</div>
-									<div class="billing__line billing__line--margin"></div>
-									<div>
-										<div class="billing__additional">
-											<h1
-												class="billing__main-title billing__main-title--margin">Additional
-												Info</h1>
-											<label class="form-billing__label">
-												<span class="form-billing__title ">Order Notes (Optional)</span>
-												<textarea name="form[]"
-													placeholder="Notes about your order, e.g. special notes for delivery"
-													class="form-billing__textarea"></textarea>
-											</label>
+										<div class="billing__line billing__line--margin"></div>
+										<div>
+											<div class="billing__additional">
+												<h1
+													class="billing__main-title billing__main-title--margin">Additional
+													Info</h1>
+												<label class="form-billing__label">
+													<span class="form-billing__title ">Order Notes (Optional)</span>
+													<textarea name="form[]"
+														placeholder="Notes about your order, e.g. special notes for delivery"
+														class="form-billing__textarea"></textarea>
+												</label>
+											</div>
 										</div>
 									</div>
 								</div>
-							</div>
 
-							<div class="order">
-								<div class="order__container">
-									<div class="order__content">
-										<h2 class="order__main-title order__main-title--margin">Order
-											Summery</h2>
-										<div class="order__items">
-											<div class="order__item">
-												<div class="order__item-content">
-													<div class="order__item--image">
-														<img src="img/icon_1.svg" alt="icon">
+								<div class="order">
+									<div class="order__container">
+										<div class="order__content">
+											<h2 class="order__main-title order__main-title--margin">Order
+												Summery</h2>
+											<div class="order__items">
+												<div class="order__item">
+													<div class="order__item-content">
+														<div class="order__item--image">
+															<img src="img/icon_1.svg" alt="icon">
+														</div>
+														<p class="order__text">Green Capsicum <span
+																class="order__num">x5</span></p>
+														<span class="order__price">$70.00</span>
 													</div>
-													<p class="order__text">Green Capsicum <span
-															class="order__num">x5</span></p>
-													<span class="order__price">$70.00</span>
+													<div class="order__item-content">
+														<div class="order__item--image">
+															<img src="img/icon_2.svg" alt="icon">
+														</div>
+														<p class="order__text">Red Capsicum<span
+																class="order__num">x1</span></p>
+														<span class="order__price">$14.00</span>
+													</div>
 												</div>
-												<div class="order__item-content">
-													<div class="order__item--image">
-														<img src="img/icon_2.svg" alt="icon">
+												<div class="order__item order__item--twoo">
+													<div class="order__item-content">
+														<p class="order__text">Subtotal:</p>
+														<span class="order__price">$84.00</span>
 													</div>
-													<p class="order__text">Red Capsicum<span
-															class="order__num">x1</span></p>
-													<span class="order__price">$14.00</span>
+													<div class="order__item-content">
+														<p class="order__text">Shipping</p>
+														<span class="order__price">free</span>
+													</div>
+													<div class="order__item-content">
+														<p class="order__text">Total</p>
+														<span class="order__price">$84.00</span>
+													</div>
 												</div>
 											</div>
-											<div class="order__item order__item--twoo">
-												<div class="order__item-content">
-													<p class="order__text">Subtotal:</p>
-													<span class="order__price">$84.00</span>
+											<div class="order__radio">
+												<h2 class="order__main-title order__main-title--margin"> Payment
+													Method</h2>
+												<div class="order__radio-content">
+													<label>
+														<input name="pay-metod" value="cash" type="radio"
+															class="order__input">
+														<span class="order__title">Cash on Delivery</span>
+													</label>
 												</div>
-												<div class="order__item-content">
-													<p class="order__text">Shipping</p>
-													<span class="order__price">free</span>
+												<div class="order__radio-content">
+													<label>
+														<input name="pay-metod" value="paypal" type="radio"
+															class="order__input">
+														<span class="order__title">Paypal</span>
+													</label>
 												</div>
-												<div class="order__item-content">
-													<p class="order__text">Total</p>
-													<span class="order__price">$84.00</span>
+												<div class="order__radio-content">
+													<label>
+														<input name="pay-metod" value="amazon-pay" type="radio"
+															class="order__input">
+														<span class="order__title">Amazon Pay</span>
+													</label>
 												</div>
 											</div>
 										</div>
-										<div class="order__radio">
-											<h2 class="order__main-title order__main-title--margin"> Payment
-												Method</h2>
-											<div class="order__radio-content">
-												<label>
-													<input name="pay-metod" value="cash" type="radio" 
-														class="order__input">
-													<span class="order__title">Cash on Delivery</span>
-												</label>
-											</div>
-											<div class="order__radio-content">
-												<label>
-													<input name="pay-metod" value="paypal" type="radio"
-														class="order__input">
-													<span class="order__title">Paypal</span>
-												</label>
-											</div>
-											<div class="order__radio-content">
-												<label>
-													<input name="pay-metod" value="amazon-pay" type="radio"
-														 class="order__input">
-													<span class="order__title">Amazon Pay</span>
-												</label>
-											</div>
-										</div>
+										<button class="btn" type="submit">Place Order</button>
 									</div>
-									<button class="btn" type="submit">Place Order</button>
 								</div>
-
-							</div>
-
-						</form>
+							</form>
+						</div>
 					</div>
 				</div>
 			</main>
-
 			<footer class="footer">
 				<div class="footer__container">
 					<div class="footer__body">
