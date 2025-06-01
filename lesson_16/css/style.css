@@ -1,0 +1,227 @@
+@import url("reset.css");
+
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper > main {
+  flex-shrink: 1;
+}
+[class*="__container"] {
+  max-width: 1758px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* ^^^^^^^^^^Task1^^^^^^^^^^^^^^^^^^^ */
+/* Основні медіа запити */
+/* @media (max-width: 1199.98px) {}
+
+@media (max-width: 991.98px) {}
+
+@media (max-width: 767.98px) {}
+
+@media (max-width: 479.98px) {} */
+
+.header__title--margin {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.education__container {
+  max-width: 1200px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  line-height: 1.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 12px 0px 12px 0px;
+  flex-wrap: wrap;
+}
+
+.education__logo {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.education__title {
+  line-height: 1.5;
+  white-space: nowrap;
+  color: #000;
+  font-size: 18px;
+  text-align: left;
+  font-weight: 700;
+}
+.education__icon {
+  width: 44px;
+  height: 44px;
+
+  width: 100%;
+}
+
+.education__items {
+  color: #000;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.538;
+  display: flex;
+  gap: 30px;
+}
+
+.education__button {
+  color: #fff;
+  font-size: 16px;
+  text-align: left;
+  font-weight: 500;
+  text-transform: none;
+  background-color: #f26522;
+  max-width: 176px;
+  padding: 8px 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 999px;
+}
+.education__burger {
+  display: none;
+  position: relative;
+  width: 30px;
+  height: 20px;
+}
+
+.education__burger::before,
+.education__burger::after,
+.education__burger span {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  background-color: #000;
+  transition: all 0.3s;
+}
+
+.education__burger::before {
+  content: "";
+  top: 0;
+}
+
+.education__burger span {
+  top: 9px; /* Середина (20px / 2 - 1px) */
+}
+
+.education__burger::after {
+  content: "";
+  bottom: 0;
+}
+
+.education__burger.active::before {
+  transform: rotate(45deg);
+  top: 9px;
+}
+
+.education__burger.active::after {
+  transform: rotate(-45deg);
+  bottom: 9px;
+}
+
+.education__burger.active span {
+  transform: scale(0);
+}
+
+@media (max-width: 994px) {
+  .education__title {
+    opacity: 0;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+}
+@media (max-width: 1227px) {
+  .education__container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 776.98px) {
+  .education__items {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    padding-top: 20px;
+  }
+
+  .education__items.active {
+    display: flex;
+  }
+  .education__container {
+    justify-content: flex-start;
+  }
+
+  .education__logo {
+    margin-right: auto;
+  }
+  .education__burger {
+    display: block;
+  }
+  .education__content {
+    display: none;
+  }
+  .education__container {
+  }
+
+  .education__title {
+    visibility: visible;
+    opacity: 1;
+    margin-bottom: 28px;
+    font-size: 24px;
+  }
+
+  .btn svg {
+    display: none;
+  }
+}
+@media (max-width: 531px) {
+  .education__title {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+@media (any-hover: hover) {
+  .education__item:hover {
+    text-decoration: underline;
+  }
+
+  .education__button:hover {
+    outline: 1px solid #f26522;
+    background: transparent;
+    color: #f26522;
+  }
+
+  .education__button:hover path {
+    fill: #f26522;
+  }
+}
+
+.footer {
+  padding: 40px 0;
+}
+.footer__body {
+  text-align: center;
+}
+.footer__footer {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #e6e6e6;
+  font-weight: 700;
+}
