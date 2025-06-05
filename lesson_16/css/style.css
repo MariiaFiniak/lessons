@@ -16,7 +16,7 @@
   padding-left: 15px;
   padding-right: 15px;
 }
-/* ^^^^^^^^^^Task1^^^^^^^^^^^^^^^^^^^ */
+/* ............................ */
 /* Основні медіа запити */
 /* @media (max-width: 1199.98px) {}
 
@@ -25,57 +25,66 @@
 @media (max-width: 767.98px) {}
 
 @media (max-width: 479.98px) {} */
-
-.header__title--margin {
-  text-align: center;
-  font-size: 24px;
-  margin-bottom: 30px;
+.header {
+  padding: 30px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+  background-color: #f9e9d6;
 }
 
-.education__container {
-  max-width: 1200px;
+.header__container {
+}
+.header__body {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   line-height: 1.5;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: space-between;
   gap: 15px;
-  padding: 12px 0px 12px 0px;
-  flex-wrap: wrap;
 }
-
-.education__logo {
+.header__container {
+  max-width: 1174px;
+}
+.header__logo {
   display: flex;
   align-items: center;
   gap: 6px;
 }
-.education__title {
+.header__logo img {
+  width: 44px;
+  height: 44px;
+}
+.header__logo span {
   line-height: 1.5;
-  white-space: nowrap;
+  flex-wrap: wrap;
+  /* white-space: nowrap; */
   color: #000;
   font-size: 18px;
   text-align: left;
   font-weight: 700;
 }
-.education__icon {
-  width: 44px;
-  height: 44px;
-
-  width: 100%;
+.header__menu {
 }
-
-.education__items {
+.header__items {
+  display: flex;
   color: #000;
   font-size: 13px;
   font-weight: 500;
   line-height: 1.538;
-  display: flex;
   gap: 30px;
 }
-
-.education__button {
+.header__item {
+}
+.header__buttons {
+  display: flex;
+}
+.header__button {
   color: #fff;
   font-size: 16px;
   text-align: left;
@@ -84,133 +93,162 @@
   background-color: #f26522;
   max-width: 176px;
   padding: 8px 30px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  display: flex;
   gap: 8px;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   border-radius: 999px;
+  position: relative;
+  z-index: 4;
 }
-.education__burger {
+.btn {
+}
+
+.header__burger {
   display: none;
   position: relative;
   width: 30px;
   height: 20px;
 }
 
-.education__burger::before,
-.education__burger::after,
-.education__burger span {
-  position: absolute;
+.header__burger span {
   width: 100%;
   height: 2px;
-  left: 0;
-  background-color: #000;
-  transition: all 0.3s;
+  background-color: #000000;
+  position: absolute;
+  top: 9px;
+  transition: all 0.3s ease;
 }
 
-.education__burger::before {
+.header__burger::after,
+.header__burger::before {
   content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #000000;
+  position: absolute;
+  transition: all 0.3s ease;
+}
+
+.header__burger::before {
   top: 0;
 }
 
-.education__burger span {
-  top: 9px; /* Середина (20px / 2 - 1px) */
+.header__burger::after {
+  bottom: 0;
 }
 
+.header__burger.active span {
+  transform: scale(0);
+}
+
+.header__burger.active::before {
+  transform: rotate(45deg);
+  top: 9px;
+}
+
+.header__burger.active::after {
+  transform: rotate(-45deg);
+  bottom: 9px;
+}
 .education__burger::after {
   content: "";
   bottom: 0;
 }
 
-.education__burger.active::before {
-  transform: rotate(45deg);
-  top: 9px;
+@media (max-width: 991.98px) {
+  .header__logo span {
+    display: none;
+  }
 }
+@media (max-width: 767.98px) {
+  .header__burger {
+    display: block;
+  }
 
-.education__burger.active::after {
-  transform: rotate(-45deg);
-  bottom: 9px;
-}
+  .header__logo span {
+    display: block;
+  }
 
-.education__burger.active span {
-  transform: scale(0);
-}
-
-@media (max-width: 994px) {
-  .education__title {
+  .header__logo span {
+    font-size: 26px;
+  }
+  .header__button svg {
     opacity: 0;
     visibility: hidden;
     width: 0;
     height: 0;
   }
-}
-@media (max-width: 1227px) {
-  .education__container {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-}
 
-@media (max-width: 776.98px) {
-  .education__items {
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 15px;
-    padding-top: 20px;
-  }
-
-  .education__items.active {
+  .header__buttons {
     display: flex;
+    align-items: center;
+    gap: 40px;
   }
-  .education__container {
-    justify-content: flex-start;
+  .header__menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ef753d;
+    z-index: 7;
+    padding: 120px 15px 20px;
+    overflow: auto;
+  }
+  .header__menu ::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110px;
+    background-color: #f4c38b;
+  }
+  .header__burger {
+    z-index: 11;
+  }
+  .header__logo {
+    z-index: 11;
+  }
+  .header__buttons {
+    z-index: 11;
   }
 
-  .education__logo {
-    margin-right: auto;
-  }
-  .education__burger {
-    display: block;
-  }
-  .education__content {
-    display: none;
-  }
-  .education__container {
+  .header__items {
+    flex-direction: column;
+    flex-wrap: wrap;
   }
 
-  .education__title {
-    visibility: visible;
-    opacity: 1;
-    margin-bottom: 28px;
-    font-size: 24px;
+  .header__menu {
+    transform: translateX(100%);
+    transition: all 0, 3s ease;
   }
 
-  .btn svg {
-    display: none;
+  .header__menu.active {
+    transform: translateX(0);
+  }
+  .header__item {
+    font-size: 18px;
+    color: #f4c38b;
   }
 }
-@media (max-width: 531px) {
-  .education__title {
-    visibility: hidden;
-    opacity: 0;
+@media (max-width: 557.98px) {
+  .header__logo span {
+    font-size: 20px;
+  }
+  .header__logo img {
+    width: 30px;
+    height: 30px;
   }
 }
-@media (any-hover: hover) {
-  .education__item:hover {
-    text-decoration: underline;
-  }
-
-  .education__button:hover {
-    outline: 1px solid #f26522;
-    background: transparent;
-    color: #f26522;
-  }
-
-  .education__button:hover path {
-    fill: #f26522;
-  }
+@media (max-width: 487.98px) {
+	.header__logo span {
+		display: none;
+	}
+	.header__logo img {
+		width: 40px;
+		height: 40px;
+	 }
 }
 
 .footer {
