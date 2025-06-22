@@ -1,0 +1,259 @@
+@import url("reset.css");
+
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper > main {
+  flex-shrink: 1;
+}
+[class*="__container"] {
+  max-width: 1758px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* ............................ */
+/* Основні медіа запити */
+/* @media (max-width: 1199.98px) {}
+
+@media (max-width: 991.98px) {}
+
+@media (max-width: 767.98px) {}
+
+@media (max-width: 479.98px) {} */
+.section {
+  padding-block-start: 3.125rem;
+  background-color: #f8f3ec;
+}
+.section__container {
+  max-inline-size: 78.125rem;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 1.9375rem;
+}
+.section1 {
+	
+
+}
+.section1__items {
+	 display: flex;
+  flex-direction: column;
+  max-inline-size: 25.0625rem; 
+}
+
+	.section1__item {
+	}
+
+
+.section__image {
+  overflow: hidden;
+  position: relative;
+  transition: all 0, 5s;
+  flex-grow: 1;
+}
+.section__image img {
+  aspect-ratio: 401/427;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+  will-change: transform;
+}
+.section2__item img {
+  aspect-ratio: 369/378;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.section__content {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.9375rem;
+  padding-block-start: 0.875rem;
+  padding-block-end: 0.875rem;
+  font-family: "KoPub Batang", sans-serif;
+  color: #2c2c2c;
+  font-size: 1.25rem;
+  text-align: left;
+  font-family: "KoPub Batang", sans-serif;
+  font-weight: 400;
+}
+.section__text {
+}
+.section__big-title {
+  font-family: "KoPub Batang", sans-serif;
+  color: #000;
+  font-size: 3.75rem;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+}
+.section__title {
+  margin-block-end: 0.875rem;
+}
+
+.section__price {
+}
+.section__user {
+  gap: 1.25rem;
+}
+.section__heart {
+  width: 1.4375rem;
+  height: 1.4375rem;
+}
+.section__basket {
+  width: 1.4375rem;
+  height: 1.4375rem;
+}
+.button {
+  margin-top: 2.5rem;
+  max-inline-size: 13.875rem;
+  border: 0.0625rem solid #dbccba;
+  padding: 0.5625rem;
+}
+.section__button {
+  gap: 0.625rem;
+  display: inline-flex;
+  color: #2c2c2c;
+  font-size: 1.25rem;
+  text-align: left;
+  font-weight: 400;
+  padding: 0.5625rem 1.875rem;
+  background-color: #dbccba;
+  align-items: center;
+}
+.section__button::after {
+  content: "";
+  flex-shrink: 0;
+  background-image: url("../img/icon/section1-arrow\ .svg");
+  inline-size: 1.4375rem;
+  block-size: 0.875rem;
+}
+.section2 {
+}
+.section2__heading {
+  margin-block-end: 4.875rem;
+}
+
+.section2__items {
+  max-inline-size: 47.9375rem;
+  display: grid;
+  gap: 1.8125rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+.section2__item {
+}
+@media (max-width: 74.9988em) {
+  .section__big-title {
+    font-size: 2.5rem;
+  }
+  .section2__heading {
+    margin-block-end: 3.625rem;
+  }
+}
+@media (max-width: 61.9988rem) {
+  .section__container {
+    flex-direction: column;
+  }
+  .section1__items {
+
+flex-direction: row;
+	 }
+	 .section__image{
+		flex-shrink: 0‹;
+	 }
+ 
+  }
+
+  /* .section1__item{
+		flex: 0 1 calc(100% / 2- (1.8125rem * (2-1) / 2));
+	} */
+
+
+/* .grid{
+	display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(280px,1fr));  
+	grid-template-columns: repeat(2,1fr);
+} */
+
+/* .section {
+
+
+}
+.section__container {
+
+justify-content: center;
+  max-inline-size: 84.9375rem;
+  display: flex;
+  gap: 1.625rem;
+}
+.section1__items{
+
+}
+.section2__container{
+
+}
+
+
+
+
+
+.section__image:hover img {
+	transform: scale(1.1);
+}
+.section2__items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.8125rem;
+  max-width: 51.5625rem;
+  width: 100%;
+  justify-content: center;
+}
+.section2__item {
+  flex: 0 1 calc(100% / 2- (1.8125rem * (2-1) / 2));
+}
+
+
+.section__text {
+}
+.section2__heading {
+  
+}
+
+.section__content {
+}
+
+.section__price {
+}
+
+
+
+.button{
+ 
+
+}
+.section__button {
+
+
+
+
+}
+
+@media (max-width:77.25em) {
+	.section2__container{
+	
+	}
+	.section1__items{
+
+		
+	}
+	.section__item{
+
+	}
+}
+ */
